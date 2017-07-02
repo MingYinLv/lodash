@@ -2,6 +2,17 @@
  * Created by MingYin Lv on 2017/6/30.
  */
 
+// 从start位置到 end（但不包含end位置），截取 array数组
+//
+// Note: 此方法是用来在IE9以下版本替代 Array#slice来支持节点列表，确保密集数组返回
+//
+// 参数
+// array (Array): 需要截取的数组.
+//     [start=0] (number): 截取开始位置
+//     [end=array.length] (number): 结束位置（不包含）
+// 返回值
+// (Array): 返回截取后的数组 array.
+
 /**
  * 分割数组
  * @param array 要分割的数组
