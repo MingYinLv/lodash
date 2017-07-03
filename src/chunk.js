@@ -3,21 +3,17 @@
  */
 import slice from './slice';
 
-// 将 array 拆分成多个 size 长度的块，把这些块组成一个新数组。 如果 array 无法被分割成全部等长的块，那么最后剩余的元素将组成一个块。
-//
-// 参数
-// array (Array): 需要被处理的数组。
-// [size=1] (number): 每个块的长度。
-// 返回值
-// (Array): 返回一个包含拆分块数组的新数组（相当于一个二维数组）。
-//
-// chunk(['a', 'b', 'c', 'd'], 2)
-// => [['a', 'b'], ['c', 'd']]
-//
-// (['a', 'b', 'c', 'd'], 3)
-// => [['a', 'b', 'c'], ['d']]
-
-export default function (array = [], size) {
+/**
+ * 将 array 拆分成多个 size 长度的块，把这些块组成一个新数组。 如果 array 无法被分割成全部等长的块，那么最后剩余的元素将组成一个块。
+ * @param array 需要被处理的数组。
+ * @param size 每个块的长度。
+ * @returns {Array} 返回一个包含拆分块数组的新数组（相当于一个二维数组）。
+ * chunk(['a', 'b', 'c', 'd'], 2)
+ * => [['a', 'b'], ['c', 'd']]
+ * (['a', 'b', 'c', 'd'], 3)
+ * => [['a', 'b', 'c'], ['d']]
+ */
+export default function  chunk(array = [], size) {
   // 如果size为负数，size设为0
   size = Math.max(size, 0);
   // 是否传入了数组，如果没有传入，array长度为0
