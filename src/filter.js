@@ -10,15 +10,15 @@
  * @returns {Array} 新的结果数组
  */
 export default function (array = [], func) {
-    const length = array === null ? 0 : array.length;
-    const result = [];
-    let index = -1;
-    let resIndex = 0;
-    while (++index < length) {
-        const value = array[index];
-        if (func(value, index, array)) {
-            result [resIndex++] = value;
-        }
+  const length = array === null ? 0 : array.length;
+  const result = [];
+  let index = -1;
+  let resIndex = 0;
+  while (++index < length) {
+    const value = array[index];
+    if (func(value, index, array)) {
+      result [resIndex++] = value;
     }
-    return result;
+  }
+  return result;
 }

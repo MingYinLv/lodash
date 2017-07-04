@@ -18,6 +18,6 @@ import slice from './slice';
  * // => [1, 2, 3]
  */
 export default function drop(array = [], n = 1) {
-    const length = array === null ? 0 : array.length;
-    return length ? slice(array, n < 0 ? 0 : n, length) : [];
+  const length = array === null ? 0 : array.length;
+  return length ? slice(array, n < 0 ? 0 : n, length) : [];
 }

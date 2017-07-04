@@ -13,7 +13,7 @@ import slice from './slice';
  * (['a', 'b', 'c', 'd'], 3)
  * => [['a', 'b', 'c'], ['d']]
  */
-export default function  chunk(array = [], size) {
+export default function chunk(array = [], size) {
   // 如果size为负数，size设为0
   size = Math.max(size, 0);
   // 是否传入了数组，如果没有传入，array长度为0

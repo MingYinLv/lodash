@@ -11,7 +11,7 @@ import filter from './filter';
  * => [1, 2, 3]
  */
 export default function compact(array = []) {
-    if (array === null) return [];
-    return filter(array, n => n);
+  if (array === null) return [];
+  return filter(array, n => n);
 }
 
