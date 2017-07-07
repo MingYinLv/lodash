@@ -54,9 +54,8 @@ class ListCache {
   }
 
   set(key, value) {
-    const data = this.data;
+    const data = this.__data__;
     const index = assocIndexOf(data, key);
-
     if (index < 0) {
       ++this.size;
       data.push([key, value]);

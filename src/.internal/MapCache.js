@@ -71,7 +71,3 @@ class MapCache {
 
 export default MapCache;
 
-const map = new MapCache([['name', 'lvmingyin']]);
-map.set('age', 23);
-console.log(map);
-
