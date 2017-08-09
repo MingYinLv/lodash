@@ -52,6 +52,3 @@ class Stack {
 
 export default Stack;
 
-const map = new Stack([['name', 'lvmingyin']]);
-map.set('sex', 'Male');
-console.log(JSON.stringify(map));
